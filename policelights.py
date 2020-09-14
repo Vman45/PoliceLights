@@ -15,52 +15,13 @@ def flash(led1, led2):
 
 
 if __name__ == "__main__":
-    left_red = LED(23)
-    sleep(0.5)
-    right_red = LED(24)
-    sleep(0.5)
-    left_blue = LED(4)
-    sleep(0.5)
-    right_blue = LED(25)
-    sleep(0.5)
-    left_red.on()
-    right_red.on()
-    left_blue.on()
-    right_blue.on()
-
-    for x in range(0, 10):
-        flash(left_red, left_blue)
-        flash(left_red, left_blue)
-        sleep(0.5)
-        
-        flash(right_red, right_blue)
-        flash(right_red, right_blue)
-        sleep(0.5)
-
-    for x in range(0,10):
-        left_red.off()
-        right_red.off()
-        sleep(0.07)
-        left_red.on()
-        right_red.on()
-        sleep(0.07)
-        left_red.off()
-        right_red.off()
-        sleep(0.07)
-        left_red.on()
-        right_red.on()
-        sleep(0.07)
-
-        left_blue.off()
-        right_blue.off()
-        sleep(0.07)
-        left_blue.on()
-        right_blue.on()
-        sleep(0.07)
-        left_blue.off()
-        right_blue.off()
-        sleep(0.07)
-        left_blue.on()
-        right_blue.on()
-        sleep(0.07)
-
+    xmas = LED(22)
+    for x in range(0, 50):
+        xmas.off()
+        sleep(0.05)
+        xmas.on()
+        sleep(0.05)
+        xmas.off()
+        sleep(0.05)
+        xmas.on()
+        sleep(0.25)
