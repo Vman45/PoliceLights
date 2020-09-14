@@ -15,7 +15,9 @@ def flash(led1, led2):
 
 
 if __name__ == "__main__":
-    for x in range(0, 50)
     xmas = LED(22)
-    xmas.off()
-    sleep(0.1)
+    for x in range(0, 50):
+        xmas.off()
+        sleep(0.1)
+        xmas.on()
+        sleep(0.1)
