@@ -15,6 +15,6 @@ def flash(led1, led2):
 
 
 if __name__ == "__main__":
-    xmas = LED(23)
+    xmas = LED(22)
     xmas.off()
     sleep(10)
