@@ -11,6 +11,6 @@ def flashlights():
 
 
 if __name__ == "__main__":
-        left_red = LED(23)
+    left_red = LED(23)
     for x in range(0, 50):
         pass
