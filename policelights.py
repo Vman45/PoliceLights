@@ -10,7 +10,7 @@ def flashlights():
     sleep(0.1)
 
 
-
 if __name__ == "__main__":
-    for x in range(0,50):
-        flashlights()
+        left_red = LED(23)
+    for x in range(0, 50):
+        pass
