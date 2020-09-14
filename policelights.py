@@ -18,6 +18,10 @@ if __name__ == "__main__":
     xmas = LED(22)
     for x in range(0, 50):
         xmas.off()
-        sleep(0.1)
+        sleep(0.05)
         xmas.on()
-        sleep(0.1)
+        sleep(0.05)
+        xmas.off()
+        sleep(0.05)
+        xmas.on()
+        sleep(0.25)
