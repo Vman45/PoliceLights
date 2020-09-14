@@ -26,6 +26,8 @@ if __name__ == "__main__":
     left_blue.on()
     right_blue.on()
 
-    for x in range(0, 50):
+    for x in range(0, 10):
         flash(left_red)
+        flash(left_red)
+        flash(right_red)
         flash(right_red)
