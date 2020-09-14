@@ -5,10 +5,10 @@ from time import sleep
 def flash(led1, led2):
     led1.off()
     led2.off()
-    sleep(0.1)
+    sleep(0.07)
     led1.on()
     led2.on()
-    sleep(0.1)
+    sleep(0.07)
 
 
 
@@ -31,6 +31,8 @@ if __name__ == "__main__":
     for x in range(0, 10):
         flash(left_red, left_blue)
         flash(left_red, left_blue)
+        sleep(0.5)
         
         flash(right_red, right_blue)
         flash(right_red, right_blue)
+        sleep(0.5)
