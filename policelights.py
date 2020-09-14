@@ -2,10 +2,12 @@ from gpiozero import LED
 from time import sleep
 
 
-def flash(led):
-    led.off()
+def flash(led1, led2):
+    led1.off()
+    led2.off()
     sleep(0.1)
-    led.on()
+    led1.on()
+    led2.on()
     sleep(0.1)
 
 
@@ -27,7 +29,8 @@ if __name__ == "__main__":
     right_blue.on()
 
     for x in range(0, 10):
-        flash(left_red)
-        flash(left_red)
-        flash(right_red)
-        flash(right_red)
+        flash(left_red, left_blue)
+        flash(left_red, left_blue)
+        
+        flash(right_red, right_blue)
+        flash(right_red, right_blue)
